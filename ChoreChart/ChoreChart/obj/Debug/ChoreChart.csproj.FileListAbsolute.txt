@@ -1,0 +1,9 @@
+C:\Users\Marc\Desktop\Rasberry pi\Git\ChoreChart\PiChoreChart\ChoreChart\ChoreChart\bin\Debug\ChoreChart.exe.config
+C:\Users\Marc\Desktop\Rasberry pi\Git\ChoreChart\PiChoreChart\ChoreChart\ChoreChart\bin\Debug\ChoreChart.exe
+C:\Users\Marc\Desktop\Rasberry pi\Git\ChoreChart\PiChoreChart\ChoreChart\ChoreChart\bin\Debug\ChoreChart.pdb
+C:\Users\Marc\Desktop\Rasberry pi\Git\ChoreChart\PiChoreChart\ChoreChart\ChoreChart\obj\Debug\ChoreChart.csprojResolveAssemblyReference.cache
+C:\Users\Marc\Desktop\Rasberry pi\Git\ChoreChart\PiChoreChart\ChoreChart\ChoreChart\obj\Debug\ChoreChart.MainForm.resources
+C:\Users\Marc\Desktop\Rasberry pi\Git\ChoreChart\PiChoreChart\ChoreChart\ChoreChart\obj\Debug\ChoreChart.Properties.Resources.resources
+C:\Users\Marc\Desktop\Rasberry pi\Git\ChoreChart\PiChoreChart\ChoreChart\ChoreChart\obj\Debug\ChoreChart.csproj.GenerateResource.Cache
+C:\Users\Marc\Desktop\Rasberry pi\Git\ChoreChart\PiChoreChart\ChoreChart\ChoreChart\obj\Debug\ChoreChart.exe
+C:\Users\Marc\Desktop\Rasberry pi\Git\ChoreChart\PiChoreChart\ChoreChart\ChoreChart\obj\Debug\ChoreChart.pdb
