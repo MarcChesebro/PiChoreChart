@@ -19,8 +19,8 @@ namespace ChoreChart
         public MainForm()
         {
             myChoreBoard = new ChoreBoard(this, 
-                new List<string>(){"chore1","chore2","chore3","chore4"}, 
-                new List<string>(){"r1", "r2", "r3", "r4"}, 
+                new List<string>(){"Laundry","Garbage","Vacuum","Sweep"}, 
+                new List<string>(){"Marc", "Zac", "Jake", "Joe"}, 
                 new List<bool>(){false, false, false, false}
                 );
 
@@ -36,11 +36,18 @@ namespace ChoreChart
             Label[] Rlabels = new Label[myChoreBoard.size];
             Label[] Clabels = new Label[myChoreBoard.size];
             CheckBox[] isDoneCheckBox = new CheckBox[myChoreBoard.size];
+            Button rotateButton = new Button();
+            Button closeButton = new Button();
 
             Size labelSize = 
                 new Size(
                     (int)(this.Size.Width * .25f),
                     (int)(this.Size.Height / myChoreBoard.size)
+                );
+            Size buttonSize =
+                new Size(
+                    (int)(this.Size.Width / 8),
+                    (int)(this.Size.Height / myChoreBoard.size )
                 );
                 
 
@@ -104,6 +111,43 @@ namespace ChoreChart
                 this.Controls.Add(Clabels[i]);
                 this.Controls.Add(isDoneCheckBox[i]);
             }
+
+            //buttons
+            //location and size
+            rotateButton.Location =
+                    new Point(
+                        labelSize.Width * 3,
+                        ((this.Size.Height - 75) / 3) - buttonSize.Width / 2
+                    );
+
+            closeButton.Location =
+                new Point(
+                    labelSize.Width * 3,
+                    (this.Size.Height - 75) / 3 * 2 - buttonSize.Width / 2
+                );
+
+            rotateButton.Size = buttonSize;
+            closeButton.Size = buttonSize;
+
+            //style
+            rotateButton.Text = "Rotate";
+            closeButton.Text = "Close";
+
+            //Funtionality
+            rotateButton.Click += (s, e) => 
+            {
+                myChoreBoard.rotateChores();
+                UpdateVisual();
+            };
+            
+            closeButton.Click += (s, e) =>
+            {
+                this.Close();
+            }; 
+
+            this.Controls.Add(rotateButton);
+            this.Controls.Add(closeButton);
+
         }
 
         private void MainForm_Load(object sender, EventArgs e)

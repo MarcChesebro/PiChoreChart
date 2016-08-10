@@ -33,6 +33,15 @@ namespace ChoreChart
             this.size = Chores.Count;
         }
 
+        public void rotateChores()
+        {
+
+            String end = Chores[Chores.Count - 1];
+            Chores.RemoveAt(Chores.Count - 1);
+            Chores.Insert(0, end);
+
+        }
+
         private void UpdateForm()
         {
             Form.UpdateVisual();
