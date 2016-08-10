@@ -131,6 +131,7 @@ namespace ChoreChart
 
             //style
             rotateButton.Text = "Rotate";
+            rotateButton.Image = Image.FromFile("C:\\Users\\Marc\\Desktop\\Rasberry pi\\Git\\ChoreChart\\PiChoreChart\\ChoreChart\\ChoreChart\\bin\\Debug\\check.png");
             closeButton.Text = "Close";
 
             //Funtionality
