@@ -28,7 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            this.Images = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
+            // 
+            // Images
+            // 
+            this.Images.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("Images.ImageStream")));
+            this.Images.TransparentColor = System.Drawing.Color.Transparent;
+            this.Images.Images.SetKeyName(0, "check.png");
+            this.Images.Images.SetKeyName(1, "cross.png");
             // 
             // MainForm
             // 
@@ -45,6 +55,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.ImageList Images;
 
     }
 }

@@ -20,7 +20,7 @@ namespace ChoreChart
         {
             myChoreBoard = new ChoreBoard(this, 
                 new List<string>(){"Laundry","Garbage","Vacuum","Sweep"}, 
-                new List<string>(){"Marc", "Zac", "Jake", "Joe"}, 
+                new List<string>(){"Marc", "Zach", "Jake", "Joe"}, 
                 new List<bool>(){false, false, false, false}
                 );
 
@@ -103,6 +103,24 @@ namespace ChoreChart
                         (this.Size.Height - 75) / myChoreBoard.size * i
                     );
                 isDoneCheckBox[i].Size = labelSize;
+
+                //funtionallity/style
+                //default
+                isDoneCheckBox[i].BackgroundImage = Images.Images[1];
+                isDoneCheckBox[i].BackgroundImageLayout = ImageLayout.Stretch;
+
+                isDoneCheckBox[i].CheckedChanged += (s, e) =>
+                {
+                    CheckBox checkBox = s as CheckBox;
+                    if (checkBox.Checked)
+                    {
+                        checkBox.BackgroundImage = Images.Images[0];
+                    }
+                    else
+                    {
+                        checkBox.BackgroundImage = Images.Images[1];
+                    }
+                };
             }
 
             for (int i = 0; i < myChoreBoard.size; i++)
@@ -131,7 +149,6 @@ namespace ChoreChart
 
             //style
             rotateButton.Text = "Rotate";
-            rotateButton.Image = Image.FromFile("C:\\Users\\Marc\\Desktop\\Rasberry pi\\Git\\ChoreChart\\PiChoreChart\\ChoreChart\\ChoreChart\\bin\\Debug\\check.png");
             closeButton.Text = "Close";
 
             //Funtionality
